@@ -1,0 +1,25 @@
+@import '../../../../styles'
+
+nav.navbar
+	background-color: $secondColor !important
+	@include desktop
+		background-color: transparent !important
+
+	div.navbar-collapse
+		@include desktop
+			justify-content: end
+		
+		// .navbar-nav
+		// 	margin-right: 5%
+
+		.nav-item
+			@include desktop
+				margin-right: 2%
+				width: 125px
+
+			.nav-link
+				color: $fontColor1
+				@include desktop
+					color: $secondColor
+					font-weight: 600
+					font-size: 20px
